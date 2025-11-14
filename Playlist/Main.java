@@ -7,6 +7,6 @@ public class Main {
         playlist.addSong("Lagu Kun Anta");
         playlist.addSong("Lagu Ya Nabi Salam Alaika");
 
-        playlist.displayPlaylist(); // Menampilkan semua lagu
+        playlist.displayPlaylist();
     }
 }

@@ -1,28 +1,28 @@
 package Playlist;
 
 class Playlist {
-    private Song head; // Menunjuk ke lagu pertama dalam playlist
+    private Song head;
 
-    // Konstruktor untuk menginisialisasi playlist
+   
     public Playlist() {
-        this.head = null; // Awalnya playlist kosong
+        this.head = null; 
     }
 
-    // Metode untuk menambah lagu di akhir playlist
+   
     public void addSong(String title) {
         Song newSong = new Song(title);
         if (head == null) {
-            head = newSong; // Jika playlist kosong, lagu pertama menjadi head
+            head = newSong;
         } else {
             Song current = head;
             while (current.next != null) {
-                current = current.next; // Mencari akhir playlist
+                current = current.next; 
             }
-            current.next = newSong; // Menambahkan lagu baru di akhir
+            current.next = newSong;
         }
     }
 
-    // Metode untuk menampilkan semua lagu dalam playlist
+   
     public void displayPlaylist() {
         Song current = head;
         if (current == null) {
@@ -31,8 +31,8 @@ class Playlist {
         }
         while (current != null) {
             System.out.print(current.title + " -> ");
-            current = current.next; // Melanjutkan ke lagu berikutnya
+            current = current.next; 
         }
-        System.out.println("Habis"); // Menandakan akhir dari playlist
+        System.out.println("Habis");
     }
 }
