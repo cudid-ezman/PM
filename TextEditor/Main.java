@@ -4,34 +4,26 @@ public class Main {
     public static void main(String[] args) {
         TextEditor editor = new TextEditor();
 
-        // Menulis teks
         editor.write("Hadid ");
         editor.write("Ganteng");
 
-        // Menampilkan teks
-        editor.show(); // Output: Teks saat ini: Hello, world!
+        editor.show(); 
 
-        // Melakukan undo
         editor.undo();
-        editor.show(); // Output: Teks saat ini: Hello,
+        editor.show(); 
 
-        // Melakukan redo
         editor.redo();
-        editor.show(); // Output: Teks saat ini: Hello, world!
+        editor.show();
 
-        // Melakukan undo lagi
         editor.undo();
-        editor.show(); // Output: Teks saat ini: Hello,
+        editor.show();
 
-        // Melakukan undo lagi
         editor.undo();
-        editor.show(); // Output: Teks saat ini:
+        editor.show();
 
-        // Mencoba undo saat tidak ada aksi
-        editor.undo(); // Output: Tidak ada aksi yang dapat di-undo.
+        editor.undo();
 
-        // Melakukan redo
         editor.redo();
-        editor.show(); // Output: Teks saat ini: Hello,
+        editor.show();
     }
 }
